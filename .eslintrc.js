@@ -1,0 +1,62 @@
+module.exports = {
+  parserOptions: {
+    ecmaVersion: 2017
+  },
+  env: {
+    browser: true,
+    node: true,
+    mocha: true,
+    jest: true,
+    es6: true,
+  },
+  rules: {
+    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-extra-parens': 1,
+    'valid-jsdoc': [1, {
+      'requireReturn': false,
+      'requireParamDescription': false,
+      'requireReturnDescription': false
+    }],
+    complexity: [2, 8],
+    'default-case': 2,
+    'guard-for-in': 2,
+    'no-alert': 1,
+    'no-floating-decimal': 1,
+    'no-self-compare': 2,
+    'no-throw-literal': 2,
+    'no-void': 2,
+    'quote-props': [2, 'as-needed'],
+    'vars-on-top': 2,
+    'wrap-iife': 2,
+    strict: [2, 'global'],
+    'no-unused-vars': 2,
+    'handle-callback-err': [2, '^.*(e|E)rr'],
+    'no-mixed-requires': 0,
+    'no-new-require': 2,
+    'no-path-concat': 2,
+    'brace-style': [2, '1tbs', { allowSingleLine: true }],
+    'comma-style': [2, 'last'],
+    'comma-spacing': ["error", { "before": false, "after": true }],
+    indent: [2, 2, { SwitchCase: 1 }],
+    'newline-after-var': [2, 'always'],
+    'no-nested-ternary': 2,
+    'no-spaced-func': 0,
+    'no-trailing-spaces': 2,
+    'no-underscore-dangle': 0,
+    'no-unneeded-ternary': 1,
+    'one-var': ['error', 'consecutive'],
+    quotes: [2, 'single', 'avoid-escape'],
+    semi: [2, 'always'],
+    'keyword-spacing': 2,
+    'space-before-blocks': [2, 'always'],
+    'space-before-function-paren': [2, {
+      anonymous: 'always',
+      named: 'never'
+    }],
+    'space-infix-ops': [1, { int32Hint: false }],
+    'spaced-comment': [2, 'always'],
+    'generator-star-spacing': [2, 'before'],
+    'max-depth': [2, 4],
+    'max-params': [2, 4]
+  }
+};
